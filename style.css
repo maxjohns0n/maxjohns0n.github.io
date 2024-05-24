@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Avenir";
+    src: url(fonts/Avenir\ Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(fonts/Avenir\ Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+
+body {
+    font-family: Avenir, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 10px auto;
+    width: 1500px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.authors {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: white;
+    background-color: #0f6fc6;
+    padding: 0.4em 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.authors span {
+    margin: 0 20px;
+}
