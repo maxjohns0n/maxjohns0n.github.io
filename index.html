@@ -2,16 +2,44 @@
 <html>
 
 <head>
-    <title>Musical Micro-timing for Live Coding</title>
+    <title>Musical Micro-Timing for Live Coding - ISMIR 2023</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
     <div class="container">
-        <h1 class="page-title">Musical Micro-timing for Live Coding</h1>
-        <div class="authors">
-            <span>Max Johnson</span>
-            <span>Mark Gotham</span>
+        <div class="header">
+            <h1 class="page-title">Musical Micro-Timing for Live Coding</h1>
+            <div class="authors">
+                <span>Max Johnson</span>
+                <span>Mark Gotham</span>
+            </div>
+        </div>
+
+        <p class="ismir-text">As presented at ISMIR 2023</p>
+
+        <div class="jumbotron">
+            <p class="abstract">
+                Micro-timing is an essential part of human music-making, yet it is absent from most computer music
+                systems. Partly to address this gap, we present a novel system for generating music with style-specific
+                micro-timing within the <a href="https://sonic-pi.net/">Sonic Pi</a> live coding language. We use a
+                probabilistic approach to control the exact timing according to patterns discovered in new analyses of
+                existing micro-timing data (jembe drumming and Viennese waltz). This implementation also required the
+                introduction of musical metre into Sonic Pi. The new metre and micro-timing systems are inherently
+                flexible, and thus open to a wide range of creative possibilities including (but not limited to):
+                creating new micro-timing profiles for additional styles; expanded definitions of metre; and the free
+                mixing of one micro-timing style with the musical content of another. The code is freely available as a
+                <a href="https://rubygems.org/gems/sonicpi-metre">Sonic Pi plug-in</a> and released open source on <a
+                    href="https://github.com/MaxTheComputerer/sonicpi-metre">GitHub</a>.
+            </p>
+            <div class="button-group">
+                <a class="btn btn-primary" href="https://archives.ismir.net/ismir2023/paper/000010.pdf" target="_blank">
+                    Read the paper
+                </a>
+                <a class="btn btn-light" href="https://github.com/MaxTheComputerer/sonicpi-metre" target="_blank">
+                    Check out the code
+                </a>
+            </div>
         </div>
     </div>
 </body>
