@@ -1,15 +1,12 @@
 @use 'colours';
 
+$container-padding: 30px;
+
 .container {
     margin: 10px auto;
-    padding: 30px;
+    padding: $container-padding;
     width: 100%;
-}
-
-@media (min-width: 1500px) {
-    .container {
-        width: 1500px;
-    }
+    max-width: calc(1500px - 2*$container-padding);
 }
 
 .jumbotron {

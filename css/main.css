@@ -2,13 +2,9 @@
   margin: 10px auto;
   padding: 30px;
   width: 100%;
+  max-width: 1440px;
 }
 
-@media (min-width: 1500px) {
-  .container {
-    width: 1500px;
-  }
-}
 .jumbotron {
   background-color: #e9f5ff;
   padding: 3rem;
