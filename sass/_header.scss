@@ -1,0 +1,30 @@
+@use 'colours';
+
+.header {
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+
+.page-title {
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.authors {
+    font-size: 2rem;
+    color: white;
+    background-color: colours.$primary-colour;
+    padding: 0.4em 0;
+    width: 50%;
+    margin: 0 auto;
+
+    span {
+        margin: 0 20px;
+    }
+}
+
+.ismir-text {
+    margin-bottom: 2rem;
+    font-style: italic;
+}

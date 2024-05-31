@@ -1,0 +1,31 @@
+@use 'colours';
+
+.button-group .btn {
+    margin-right: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: colours.$primary-colour;
+    color: white;
+
+    &:hover {
+        background-color: colours.$primary-colour-dark;
+    }
+}
+
+.btn-light {
+    color: colours.$primary-colour;
+    border: 1.5px solid colours.$primary-colour;
+
+    &:hover {
+        background-color: colours.$primary-colour;
+        color: white;
+    }
+}

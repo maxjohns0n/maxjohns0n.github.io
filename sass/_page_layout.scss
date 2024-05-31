@@ -1,0 +1,22 @@
+@use 'colours';
+
+.container {
+    margin: 10px auto;
+    padding: 30px;
+    width: 100%;
+}
+
+@media (min-width: 1500px) {
+    .container {
+        width: 1500px;
+    }
+}
+
+.jumbotron {
+    background-color: colours.$primary-colour-light;
+    padding: 3rem;
+}
+
+.section {
+    margin-bottom: 5rem;
+}

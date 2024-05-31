@@ -1,21 +1,11 @@
-@font-face {
-    font-family: "Avenir";
-    src: url(../fonts/Avenir\ Regular.ttf) format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Avenir";
-    src: url(../fonts/Avenir\ Light.ttf) format("truetype");
-    font-weight: lighter;
-}
+@use 'page_layout';
+@use 'fonts';
+@use 'header';
+@use 'buttons';
 
 body {
     font-family: Avenir, Helvetica, sans-serif;
     font-size: 1.25rem;
-    --primary-colour: #0f6fc6;
-    --primary-colour-dark: #0c579d;
-    --text-hover-color: #e9e9e9;
 }
 
 p {
@@ -34,87 +24,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
-.container {
-    margin: 10px auto;
-    padding: 30px;
-    width: 100%;
-}
-
-@media (min-width: 1500px) {
-    .container {
-        width: 1500px;
-    }
-}
-
-.header {
-    text-align: center;
-    font-weight: lighter;
-    margin-bottom: 2rem;
-}
-
-.page-title {
-    font-size: 4rem;
-    font-weight: lighter;
-}
-
-.authors {
-    font-size: 2rem;
-    color: white;
-    background-color: var(--primary-colour);
-    padding: 0.4em 0;
-    width: 50%;
-    margin: 0 auto;
-
-    span {
-        margin: 0 20px;
-    }
-}
-
 .abstract {
     margin-top: 0;
     margin-bottom: 2rem;
-}
-
-.jumbotron {
-    background-color: #e9f5ff;
-    padding: 3rem;
-}
-
-.ismir-text {
-    margin-bottom: 2rem;
-    font-style: italic;
-}
-
-.button-group .btn {
-    margin-right: 1rem;
-}
-
-.btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.btn-primary {
-    background-color: var(--primary-colour);
-    color: white;
-
-    &:hover {
-        background-color: var(--primary-colour-dark);
-    }
-}
-
-.btn-light {
-    color: var(--primary-colour);
-    border: 1.5px solid var(--primary-colour);
-
-    &:hover {
-        background-color: var(--primary-colour);
-        color: white;
-    }
-}
-
-.section {
-    margin-bottom: 5rem;
 }

@@ -1,0 +1,10 @@
+@mixin avenir-font($weight, $filename_weight) {
+    @font-face {
+        font-family: "Avenir";
+        src: url("../fonts/Avenir " + $filename_weight + ".ttf") format("truetype");
+        font-weight: $weight;
+    }
+}
+
+@include avenir-font(normal, Regular);
+@include avenir-font(lighter, Light);
