@@ -42,6 +42,7 @@
   padding: 0.4em 0;
   width: 50%;
   margin: 0 auto;
+  border-radius: 10px;
 }
 .authors span {
   margin: 0 20px;
@@ -78,6 +79,43 @@
 .btn-light:hover {
   background-color: #0f6fc6;
   color: white;
+}
+
+code {
+  color: #5e5e5e;
+}
+
+.sp-keyword {
+  color: #ff8c00;
+}
+
+.sp-string {
+  color: #61CE3C;
+}
+
+.sp-symbol {
+  color: deeppink;
+}
+
+.demo-block {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 50px;
+}
+
+code, img, audio {
+  display: inline-block;
+}
+
+img {
+  width: 30%;
+  height: auto;
+  margin-bottom: -40px;
+}
+
+code {
+  min-width: 370px;
 }
 
 body {

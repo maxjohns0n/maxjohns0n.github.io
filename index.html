@@ -4,6 +4,7 @@
 <head>
     <title>Musical Micro-Timing for Live Coding - ISMIR 2023</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="https://ismir2023program.ismir.net/static/paper_images/93" />
 </head>
 
 <body>
@@ -49,12 +50,50 @@
                 “djembe”) drum music from Mali and Viennese waltz music. These two styles both have robust, well-known
                 micro-timing characteristics.
             </p>
-            <h3>Viennese waltz</h3>
-            <audio controls>
-                <source src="media/bd_straight_trim.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
 
+
+            <h3>Viennese waltz</h3>
+            <p>
+                The Viennese waltz is a style of fast waltz notated in 3/4 (but often counted in 1), originally intended
+                for ballroom dancing, and now often performed in concerts by Western classical orchestras. Distinctive
+                microtiming can be observed on (at least) the beat level, where it has a characteristic
+                short-long-medium pattern.
+            </p>
+
+            <h4>Without micro-timing</h4>
+            <div class="demo-block">
+                <code>
+                    <span class="sp-keyword">require</span>
+                    <span class="sp-string">'sonicpi/metre'</span><br>
+                    use_metre
+                    <span class="sp-string">'3/4'</span><br>
+                    eval_file
+                    <span class="sp-string">"blue_danube.rb"</span><br>
+                </code>
+                <img src="media/waltz_without_microtiming.png" />
+                <audio controls>
+                    <source src="media/bd_straight_trim.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <h4>With micro-timing</h4>
+            <div class="demo-block">
+                <code>
+                    <span class="sp-keyword">require</span>
+                    <span class="sp-string">'sonicpi/metre'</span><br>
+                    use_metre
+                    <span class="sp-string">'3/4'</span>,
+                    <span class="sp-symbol">:viennese_waltz</span><br>
+                    eval_file
+                    <span class="sp-string">"blue_danube.rb"</span><br>
+                </code>
+                <img src="media/waltz_with_microtiming.png" />
+                <audio controls>
+                    <source src="media/bd_micro_trim.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
     </div>
 </body>

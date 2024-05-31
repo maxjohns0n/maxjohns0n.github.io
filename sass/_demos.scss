@@ -1,0 +1,22 @@
+@use 'sonicpi_syntax';
+
+.demo-block {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 50px;
+}
+
+code, img, audio {
+    display: inline-block;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    margin-bottom: -40px;
+}
+
+code {
+    min-width: 370px;
+}
