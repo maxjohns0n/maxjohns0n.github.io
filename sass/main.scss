@@ -22,7 +22,8 @@ p {
     margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: lighter;
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
@@ -63,10 +64,10 @@ h3 {
     padding: 0.4em 0;
     width: 50%;
     margin: 0 auto;
-}
 
-.authors span {
-    margin: 0 20px;
+    span {
+        margin: 0 20px;
+    }
 }
 
 .abstract {
@@ -98,20 +99,20 @@ h3 {
 .btn-primary {
     background-color: var(--primary-colour);
     color: white;
-}
 
-.btn-primary:hover {
-    background-color: var(--primary-colour-dark);
+    &:hover {
+        background-color: var(--primary-colour-dark);
+    }
 }
 
 .btn-light {
     color: var(--primary-colour);
     border: 1.5px solid var(--primary-colour);
-}
 
-.btn-light:hover {
-    background-color: var(--primary-colour);
-    color: white;
+    &:hover {
+        background-color: var(--primary-colour);
+        color: white;
+    }
 }
 
 .section {
